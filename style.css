@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Gulfs Display Normal';
+    src: url('font/GulfsDisplay-Normal.eot');
+    src: local('Gulfs Display Normal'), local('GulfsDisplay-Normal'),
+        url('font/GulfsDisplay-Normal.eot?#iefix') format('embedded-opentype'),
+        url('font/GulfsDisplay-Normal.woff2') format('woff2'),
+        url('font/GulfsDisplay-Normal.woff') format('woff'),
+        url('font/GulfsDisplay-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: pink;
+    font-family: 'Gulfs Display Normal';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.nav-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.contenedor-principal {
+    height: calc(100vh - 69px);
+    display: flex;
+    flex-direction: column;
+}
+
+.mitadsuperior{
+    flex:1;
+    background-color: pink;
+    display: flex;
+    color: blue;
+    font-size: 50px;
+    font-family: 'Gulfs Display Normal';
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    
+}
+
+.mitadinferior {
+    flex: 1;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-superpuesta {
+    top: 60%;
+    width: 20%;
+    height: 500px;
+    align-content: center;
+    position: absolute;
+}
