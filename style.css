@@ -65,6 +65,8 @@ body {
     text-align: center;
     line-height: 50px;
     
+    z-index: 0;
+    
 }
 
 .mitadinferior {
@@ -81,4 +83,15 @@ body {
     height: 500px;
     align-content: center;
     position: absolute;
+    z-index: 1;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    z-index: 2;
+    color: blue;
+    font-size: 50px;
+    font-family: 'Gulfs Display Normal';
+    text-align: center;
+    line-height: 50px;
 }
