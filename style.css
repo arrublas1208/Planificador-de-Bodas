@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
-    background-color: pink;
+    background-color: #fcb1cb;
     font-family: 'Gulfs Display Normal';
     font-weight: normal;
     font-style: normal;
@@ -46,12 +46,23 @@ body {
 .contenedor-principal {
     display: flex;
     flex-direction: column;
+    min-height: 1200px;
     position: relative;
+    background: linear-gradient(to bottom, #fcb1cb 60%, yellow 30%);
+    overflow: hidden;
 }
 
+
+.contenedor-principal1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 1200px;
+    position: relative;
+    background: linear-gradient(to bottom, #fcb1cb 60%, yellow 30%);
+    overflow: hidden;
+}
 .mitadsuperior {
     flex:1;
-    background-color: pink;
     display: flex;
     color: blue;
     font-size: 50px;
@@ -71,21 +82,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 1100px;
+    min-height: 900px;
 }
 
 .imagen-superpuesta {
     top: 45%;
     width: 30%;
-    height: 900px;
+    height: 100%;
     align-content: center;
     position: absolute;
     z-index: 2;
     border: 1px solid black;
-    border-top-left-radius: 45%;
-    border-top-right-radius: 45%;
-    border-bottom-left-radius: 45%;
-    border-bottom-right-radius: 45%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
 }
 
 .texto-superpuesto {
@@ -99,10 +110,44 @@ body {
     top: 15%;
 }
 
+
+
+.simboloazul {
+    top: 41%;
+    width: 8%;
+    height: 450px;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    margin-left: 30.7%;
+}
+
+.simbolorosa {
+    top:50%;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    height: 22%;
+    margin-left: 70%;
+}
+
+.chicasola {
+    top: 12%;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 18%;
+    height: 35%;
+    margin-left: 80%;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+
 .imagenizquierdapareja {
-    top: 35%;
-    width: 25%;
-    height: 500px;
+    top: 40%;
+    width: 15%;
+    height: 400px;
     align-content: center;
     position: absolute;
     z-index: 1;
@@ -111,39 +156,8 @@ body {
     border-bottom-right-radius: 30px;
 }
 
-.simboloazul {
-    top: 35%;
-    width: 5%;
-    height: 450px;
-    align-content: center;
-    position: absolute;
-    z-index: 1;
-    margin-left: 32.5%;
-}
-
-.simbolorosa {
-    top:40%;
-    align-content: center;
-    position: absolute;
-    z-index: 1;
-    height: 15%;
-    margin-left: 70%;
-}
-
-.chicasola {
-    top: 10%;
-    align-content: center;
-    position: absolute;
-    z-index: 1;
-    width: 15%;
-    height: 25%;
-    margin-left: 83%;
-    border-radius: 30px;
-    border: 1px solid black;
-}
-
 .estrella1 {
-    top: 30%;
+    top: 40%;
     align-content: center;
     position: absolute;
     z-index: 1;
@@ -152,9 +166,39 @@ body {
     margin-left: 25%;
 }
 
+.estrella2 {
+    top: 20%;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    height:3%;
+    margin-left: 12%;
+}
+
+.estrella3 {
+    top: 47%;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    height:4%;
+    margin-left: 63%;
+}
+
+
+.adorno1 {
+    top: 35%;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    margin-left: 73.8%;
+}
+
 .holablanco {
     position: absolute;
-    width: 30%;
+    width: 25%;
     top: 10px;
     left:48%;
     z-index: 3; 
@@ -162,9 +206,10 @@ body {
 
 .holablanco1 {
     position: relative; 
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
+
 
 .texto {
     position: absolute;
@@ -172,6 +217,8 @@ body {
     top: 300px;
     left: 49.5%;
     z-index: 3; 
+    font-family: "Anybody"
+
 }
 
 .texto2 {
@@ -180,21 +227,44 @@ body {
     top: 450px;
     left: 49.5%;
     z-index: 3; 
+    font-family: 'Gulfs Display Normal';
+    font-size: 25px;
 }
 
 .anillo {
     position: absolute;
     width: 9%;
     top: 410px;
-    left: 62%;
+    left: 66%;
     z-index: 3; 
 }
+
+.retrato {
+    position: absolute;
+    width: 90%;
+    top: -70px;
+    left:-30%;
+    z-index: 3; 
+}
+
+.loversislove {
+    position: absolute;
+    width: 30%;
+    top: 8px;
+    left: 5%;
+    z-index: 3; 
+    font-family: 'Gulfs Display Normal';
+    font-size: 20px;
+
+}
+
+
 
 .estrellanaranja {
     position: absolute;
     width: 7%;
     top: 400px;
-    left: 70%;
+    left: 74%;
     z-index: 3; 
 }
 
@@ -217,7 +287,7 @@ body {
 .puntosesqu3 {
     position: absolute;
     width: 3%;
-    top:460px;
+    top:550px;
     left: 1%;
     z-index: 3; 
 }
@@ -225,7 +295,7 @@ body {
 .puntosesqu4 {
     position: absolute;
     width: 3%;
-    top:460px;
+    top:550px;
     left: 94%;
     z-index: 3; 
 }
@@ -345,6 +415,18 @@ body {
     object-fit: cover;
 }
 
+.seccion-nosotros {
+    width: 100%;
+    padding: 0px;
+    background-color: yellow;
+    min-height:650px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 
 .seccion-precios {
     width: 100%;
@@ -381,7 +463,6 @@ body {
 
 
 .s1 { grid-area: s1; }
-.s2 { grid-area: s2; }
 .s3 { grid-area: s3; }
 .s4 { grid-area: s4; }
 .s5 { grid-area: s5; }
@@ -389,6 +470,13 @@ body {
 .s7 { grid-area: s7; }
 .s8 { grid-area: s8; }
 .s9 { grid-area: s9; }
+
+.s2 {
+    grid-area: s2;
+    background-color: yellow;
+    position: relative;
+    overflow: hidden;
+}
 
 
 .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9 {
@@ -472,6 +560,21 @@ body {
     gap: 10px;
 }
 
+.seccompro {
+    color: rgb(255, 121, 72);
+    font-family: 'Gulfs Display Normal';
+    font-size: 200%;
+    position: absolute;
+    left: 13%;
+    top: 10%;
+    z-index: 2;
+    margin: 0;
+    display: inline-flex; 
+    align-items: center; 
+    gap: 10px;
+    text-align: center;
+}
+
 
 
 .texto-mundo .icono-lugar {
@@ -482,3 +585,23 @@ body {
     color: white;
 }
 
+
+.seccompro .icono-lugar {
+    width: 1em; 
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(255, 121, 72);
+}
+
+.seccion-contrato {
+    width: 100%;
+    padding: 0px;
+    background-color: #f8f8f8;
+    min-height: 900px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
